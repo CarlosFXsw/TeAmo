@@ -18,8 +18,17 @@
         h2 {
             color: #221f1f;
         }
+        h2:hover {
+            color: white;
+        }
         li {
             background: papayawhip;
+        }
+        li::first-letter {
+            color: red;
+        }
+        li::before {
+            content: "✨";
         }
         label {
             background: brown;
@@ -30,6 +39,9 @@
         nav p {
             color: brown;
         }
+        nav li:nth-child(2) {
+            color: rgb(47, 20, 47);
+        }
         header + nav {
             background: rgb(181, 232, 41);
         }
@@ -38,6 +50,9 @@
         }
         nav ul {
             background: rgb(181, 232, 41);
+        }
+        ::placeholder {
+            color: chocolate;
         }
     </style>
 </head>
@@ -62,7 +77,7 @@
     </section>
     <form action="">
         <label for="name">¿Cómo se llama el perrito?</label>
-        <input type="text" id="name">
+        <input type="text" placeholder="name">
     </form>
     <footer></footer>
 </body>
