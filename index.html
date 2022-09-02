@@ -44,54 +44,55 @@
         nav li:nth-child(2) {
             color: rgb(47, 20, 47);
         }
-        header + nav {
-            background: rgb(181, 232, 41);
-        }
-        nav p {
-            background: rgb(181, 232, 41);
-        }
-        nav ul {
-            background: rgb(181, 232, 41);
-        }
         ::placeholder {
             color: chocolate;
-        }
-        div img {
-            width: 800px;
-            height: 480px;
-            margin: 20px;
-        }
-        p img {
-            margin: 20px;
         }
         form {
             margin: 20px;
         }
+        .container {
+            display: flex;
+        }
+        .item {
+            width: 500px;
+            height: 800px;
+        }
+        nav img {
+            width: 440px;
+            height: 600px;
+            margin: 20px;
+        }
+        div img {
+            width: 480px;
+            height: 300px;
+        }            
     </style>
 </head>
 <body>
     <header>
         <h1>Recuerda que te amo.</h1>
         <h2>El Rocky siempre fue el pretexto, mi amor eres t&uacute.</h2>
-    </header>    
-    <nav>
-       <p>Puedo ser distra&iacutedo, pero siempre pienso en nosotros.</p>
-       <ul>
-        <li>Tambi&eacuten abrazo al Rambo.</li>
-        <li>Imagino como ser&aacute nuestra casa.</li>
-       </ul>
-       <p>Te has dado cuenta que si tengo planes, solamente que no soy muy expresivo. T&uacute est&aacutes en mis planes de vida.</p>
-       <p><img src="https://i.imgur.com/BRhL8ma.jpg" /></p>
-    </nav>
-    <section>
-        <div>
-            <img src="https://i.imgur.com/c2Qd9nX.jpg" />
-        </div>
-    </section>
-    <form action="">
-        <label for="name">¿Cómo se llama el perrito?</label>
-        <input type="text" placeholder="name">
-    </form>
+    </header>
+    <nav class="container">
+        <nav class="item">
+            <p>Puedo ser distra&iacutedo, pero siempre pienso en nosotros.</p>
+            <ul>
+             <li>Tambi&eacuten abrazo al Rambo.</li>
+             <li>Imagino como ser&aacute nuestra casa.</li>
+            </ul>
+            <p>Te has dado cuenta que si tengo planes, solamente que no soy muy expresivo. T&uacute est&aacutes en mis planes de vida.</p>
+            <img src="https://i.imgur.com/BRhL8ma.jpg" />
+         </nav>
+         <nav class="item">
+             <div>
+                <img src="https://i.imgur.com/c2Qd9nX.jpg" />
+             </div>
+             <form action="">
+                 <label for="name">¿Cómo se llama el perrito?</label>
+                 <input type="text" placeholder="name">
+             </form>
+         </nav>   
+    </nav>    
     <footer></footer>
 </body>
 </html>
